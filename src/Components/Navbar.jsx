@@ -21,12 +21,20 @@ const Navbar = () => {
             path: "/blogs"
         },
         {
+            title: "Categories",
+            path: "/categories"
+        },
+        {
             title: "Services",
             path: "/services"
         },
         {
             title: "Contacts",
             path: "/contact"
+        },
+        {
+            title: "Dashboard",
+            path: "/dashboard"
         },
     ];
     const handler = () => {
@@ -39,8 +47,7 @@ const Navbar = () => {
                 <div className='flex justify-between items-center bg-indigo-700/40 p-5 mx-20 mb-2 rounded-2xl'>
                     <h2>Next hero</h2>
                     <ul className='flex justify-between space-x-2'>
-                        <li>Dashboard</li>
-                        <li>User</li>
+                        <li>Home</li>
                         <li>Profile</li>
                     </ul>
                 </div>
@@ -49,7 +56,7 @@ const Navbar = () => {
     }
     return (
         <div>
-            <nav className="flex items-center justify-evenly bg-red-500 p-5">
+            <nav className="md:flex items-center justify-evenly bg-red-500 p-5 md:space-y-0 space-y-5 text-center">
                 <h4 className='text-3xl'>Next<span className='text-slate-300'>Hero</span></h4>
                 <ul className='flex justify-between items-center space-x-3'>
                     {
@@ -64,7 +71,7 @@ const Navbar = () => {
                     <li><a href='/contact'>Contact</a></li> */}
                     {/* next js link tag */}
                 </ul>
-                <button onClick={() => handler()} className='p-2 bg-purple-200 text-pink-700 rounded-3xl'>Login</button>
+                <button onClick={() => handler()} className='p-3 bg-purple-200 text-pink-700 rounded-3xl'>Login</button>
             </nav>
         </div>
     );

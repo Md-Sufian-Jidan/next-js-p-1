@@ -7,7 +7,6 @@ const Footer = () => {
     // console.log('line 6 footer', pathName);
     // const dash = pathName.split('/')[1];
     // console.log('clg',pathName);
-
     // if (pathName?.includes('/dashboard')) {
     //     return (
     //         <footer className='bg-lime-800'>
