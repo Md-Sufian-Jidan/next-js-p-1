@@ -37,12 +37,11 @@ const Navbar = () => {
                 <h4 className='text-3xl'>Next<span className='text-slate-300'>Hero</span></h4>
                 <ul className='flex justify-between items-center space-x-3'>
                     {
-                        navLinks?.map((link) => <>
-
-                            <li key={link?.path} className={`${pathName === link?.path && 'text-blue-700'}`}>
+                        navLinks?.map(((link, idx) => <>
+                            <li key={idx} className={`${pathName === link?.path && 'text-blue-700'}`}>
                                 <Link href={link?.path}>{link?.title}</Link>
                             </li>
-                        </>
+                        </>)
                         )
                     }
                     {/* <li><a href="/">home</a> </li>
