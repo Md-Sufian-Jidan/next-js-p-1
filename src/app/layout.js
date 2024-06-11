@@ -14,9 +14,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <div className="h-screen">
+        <div>
           {children}
         </div>
+        <footer className="text-xl text-center p-5 mx-20 my-2 bg-orange-500 rounded-xl">
+          This is my next js app
+        </footer>
       </body>
     </html>
   );
