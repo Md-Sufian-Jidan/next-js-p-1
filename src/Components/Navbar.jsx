@@ -5,7 +5,7 @@ import React from 'react';
 
 const Navbar = () => {
     const pathName = usePathname();
-    console.log('navbar',pathName);
+    console.log('navbar', pathName);
     const router = useRouter();
     const navLinks = [
         {
