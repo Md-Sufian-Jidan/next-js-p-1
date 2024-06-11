@@ -5,6 +5,7 @@ import React from 'react';
 
 const Navbar = () => {
     const pathName = usePathname();
+    console.log('navbar',pathName);
     const router = useRouter();
     const navLinks = [
         {
@@ -30,6 +31,21 @@ const Navbar = () => {
     ];
     const handler = () => {
         router.push('/login');
+    };
+    if (pathName?.includes('/dashboard')) {
+        return (
+            <div>
+                {/* navbar */}
+                <div className='flex justify-between items-center bg-indigo-700/40 p-5 mx-20 mb-2 rounded-2xl'>
+                    <h2>Next hero</h2>
+                    <ul className='flex justify-between space-x-2'>
+                        <li>Dashboard</li>
+                        <li>User</li>
+                        <li>Profile</li>
+                    </ul>
+                </div>
+            </div>
+        )
     }
     return (
         <div>

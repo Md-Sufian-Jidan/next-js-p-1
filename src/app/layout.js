@@ -1,6 +1,7 @@
 import { Inter, Yaldevi } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
+import Footer from "@/Components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,7 @@ export default function RootLayout({ children }) {
         <div>
           {children}
         </div>
-        <footer className="text-xl text-center p-5 mx-20 my-2 bg-orange-500 rounded-xl">
-          This is my next js app
-        </footer>
+        <Footer />
       </body>
     </html>
   );
